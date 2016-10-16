@@ -1,13 +1,13 @@
-var counter = i;
 
-for (var i = 5; i < 120; i+10) {
+
+for (var counter = 5; counter < 120; counter +=10) {
 console.log("conter value", counter);
 }
 
-var counter = i;
 
-for (var i = 4096; i >= 1; 2/i) {
-	console.log("counter value:", counter);
+
+for (var counter = 4096; counter >= 1; counter=counter/2) {
+	console.log("counter value:",counter);
 }
 
 var arr =["George Washington", "John Adams", "Thomas Jefferson"];
@@ -29,14 +29,15 @@ var antSpecies = {
   jackJumper: {}
 }
 
-var antSpecies = {};
-var arr = antSpecies[i];
+var listOfAntSpecies = [];
 
 
-for (var i = 0; i < antSpecies.length; i++) {
-
-	console.log("names of the antSpecies", arr);
+for(var species in antSpecies){
+  listOfAntSpecies.push(species);
 }
+ 
+ console.log(listOfAntSpecies);
 
-console.log("hello")
+
+
 
